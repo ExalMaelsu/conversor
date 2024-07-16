@@ -15,7 +15,7 @@ public class CurrencyConverter {
         double amount = scanner.nextDouble();
 
         try {
-            double exchangeRate = CurrencyApi.getExchangeRate(baseCurrency, targetCurrency);
+            double exchangeRate = CurrencyAPI.getExchangeRate(baseCurrency, targetCurrency);
             double convertedAmount = amount * exchangeRate;
 
             System.out.printf("%.2f %s equivale a %.2f %s\n", amount, baseCurrency, convertedAmount, targetCurrency);
